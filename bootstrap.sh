@@ -15,7 +15,8 @@ function doIt() {
 		--exclude "dotfiles.sublime-project" \
 		--exclude "dotfiles.sublime-workspace" \
 		-avh --no-perms . ~;
-	source ~/.zshrc;
+	# source ~/.zshrc;
+	# source ~/.bashrc;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
