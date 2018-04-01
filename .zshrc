@@ -54,7 +54,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(osx git git-open jsontools npm yarn sublime virtualenv virtualenvwrapper)
+plugins=(osx git git-open npm sublime)
 
 source $ZSH/oh-my-zsh.sh
 
