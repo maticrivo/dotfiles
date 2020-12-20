@@ -99,6 +99,7 @@ brew install interactive-rebase-tool
 brew install diff-so-fancy
 brew install bat
 brew install prettyping
+brew install zsh-syntax-highlighting
 # brew install vbindiff
 # brew install zopfli
 
