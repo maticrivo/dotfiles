@@ -43,7 +43,7 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install php
+#brew install php
 brew install gmp
 
 # Install font tools.
@@ -85,17 +85,20 @@ brew install git
 brew install git-lfs
 brew install gs
 brew install imagemagick --with-webp
-brew install lua
-brew install lynx
-brew install p7zip
-brew install pigz
+# brew install lua
+# brew install lynx
+# brew install p7zip
+# brew install pigz
 brew install pv
 brew install rename
 brew install rlwrap
 brew install ssh-copy-id
 brew install tree
+brew install node
 brew install interactive-rebase-tool
 brew install diff-so-fancy
+brew install bat
+brew install prettyping
 # brew install vbindiff
 # brew install zopfli
 
