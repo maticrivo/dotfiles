@@ -13,6 +13,13 @@ alias d="cd ~/dev"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias g="git"
+alias gx="gitx"
+
+alias cat="bat"
+alias top="sudo htop"
+alias help='tldr'
+alias ping='prettyping --nolegend'
+alias preview="fzf --preview 'bat --color \"always\" {}'"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

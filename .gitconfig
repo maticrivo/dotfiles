@@ -99,6 +99,10 @@
 	# https://git-scm.com/docs/git-update-index#_untracked_cache
 	untrackedCache = true
 
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -181,3 +185,29 @@
 [init]
 
 	defaultBranch = main
+	templateDir = ~/.config/git/template/
+
+[user]
+
+	name = Matias Crivolotti
+	email = matioav@gmail.com
+
+[fetch]
+
+	prune = true
+
+[includeIf "gitdir:~/dev/paypal/"]
+
+	path = /Users/mcrivolotti/dev/paypal/.gitconfig
+
+[includeIf "gitdir:~/dev/paypal/**"]
+
+	path = /Users/mcrivolotti/dev/paypal/.gitconfig
+
+[sequence]
+
+	editor = interactive-rebase-tool
+
+[pull]
+
+	rebase = true

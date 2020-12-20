@@ -14,8 +14,8 @@ function doIt() {
 		--exclude "npm.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
-		--exclude "dotfiles.sublime-project" \
-		--exclude "dotfiles.sublime-workspace" \
+		--exclude "init/" \
+		--exclude "bin/" \
 		-avh --no-perms . ~;
 	# source ~/.zshrc;
 	# source ~/.bashrc;

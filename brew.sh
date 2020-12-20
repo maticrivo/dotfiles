@@ -94,6 +94,8 @@ brew install rename
 brew install rlwrap
 brew install ssh-copy-id
 brew install tree
+brew install interactive-rebase-tool
+brew install diff-so-fancy
 # brew install vbindiff
 # brew install zopfli
 
