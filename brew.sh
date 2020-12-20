@@ -99,5 +99,17 @@ brew install diff-so-fancy
 # brew install vbindiff
 # brew install zopfli
 
+# Brew casks
+brew cask
+brew cask install font-cascadia-code font-cascadia-code-pl font-cascadia-mono font-cascadia-mono-pl
+brew cask install the-unarchiver
+brew cask install insomnia
+brew cask install itrem2
+brew cask install karabiner-elements
+brew cask install sequel-ace
+brew cask install phoenix
+brew cask install rowanj-gitx
+brew cask install xit
+
 # Remove outdated versions from the cellar.
 brew cleanup
