@@ -21,7 +21,7 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 # brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install a modern version of Bash.
 # brew install bash
 # brew install bash-completion2
@@ -33,13 +33,13 @@ brew install gnu-sed --with-default-names
 # fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 # brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install screen
@@ -83,6 +83,7 @@ brew install gmp
 #brew install exiv2
 brew install git
 brew install git-lfs
+brew install git-open
 brew install gs
 brew install imagemagick --with-webp
 # brew install lua
@@ -105,15 +106,18 @@ brew install zsh-syntax-highlighting
 
 # Brew casks
 brew cask
-brew cask install font-cascadia-code font-cascadia-code-pl font-cascadia-mono font-cascadia-mono-pl
-brew cask install the-unarchiver
-brew cask install insomnia
-brew cask install itrem2
-brew cask install karabiner-elements
-brew cask install sequel-ace
-brew cask install phoenix
-brew cask install rowanj-gitx
-brew cask install xit
+brew install --cask font-cascadia-code font-cascadia-code-pl font-cascadia-mono font-cascadia-mono-pl
+brew install --cask homebrew/cask-versions/safari-technology-preview
+brew install --cask the-unarchiver
+brew install --cask insomnia
+brew install --cask iterm2
+brew install --cask karabiner-elements
+brew install --cask sequel-ace
+brew install --cask phoenix
+brew install --cask rowanj-gitx
+brew install --cask visual-studio-code
+brew install --cask telegram
+brew install --cask 1password
 
 # Remove outdated versions from the cellar.
 brew cleanup

@@ -33,5 +33,11 @@ export MANPAGER='less -X';
 # https://stackoverflow.com/a/42265848/96656
 export GPG_TTY=$(tty);
 
+# Kerberos (brew krb5 package)
+export PATH="/usr/local/opt/krb5/bin:/user/local/opt/krb5/sbin:$PATH"
+export LDFLAGS="-L/usr/local/opt/krb5/lib"
+export CPPFLAGS="-I/usr/local/opt/krb5/include"
+export PKG_CONFIG_PATH="/usr/local/opt/krb5/lib/pkgconfig"
+
 # Hide the “default interactive shell is now zsh” warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;

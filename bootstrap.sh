@@ -16,6 +16,8 @@ function doIt() {
 		--exclude "LICENSE-MIT.txt" \
 		--exclude "init/" \
 		--exclude "bin/" \
+		--exclude ".vim/backups/" \
+		--exclude ".vim/swaps/" \
 		-avh --no-perms . ~;
 	# source ~/.zshrc;
 	# source ~/.bashrc;
