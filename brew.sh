@@ -43,7 +43,7 @@ brew install vim
 brew install grep
 brew install openssh
 brew install screen
-#brew install php
+# brew install php
 brew install gmp
 
 # Install font tools.
@@ -90,9 +90,9 @@ brew install imagemagick --with-webp
 # brew install lynx
 # brew install p7zip
 # brew install pigz
-brew install pv
-brew install rename
-brew install rlwrap
+# brew install pv
+# brew install rename
+# brew install rlwrap
 brew install ssh-copy-id
 brew install tree
 brew install node

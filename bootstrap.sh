@@ -19,7 +19,7 @@ function doIt() {
 		--exclude ".vim/backups/" \
 		--exclude ".vim/swaps/" \
 		-avh --no-perms . ~;
-	# source ~/.zshrc;
+	source ~/.zshrc;
 	# source ~/.bashrc;
 }
 
