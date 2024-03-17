@@ -107,18 +107,44 @@ brew install python
 
 # Brew casks
 brew cask
-brew install --cask font-cascadia-code font-cascadia-code-pl font-cascadia-mono font-cascadia-mono-pl
-brew install --cask homebrew/cask-versions/safari-technology-preview
-brew install --cask the-unarchiver
-brew install --cask insomnia
-brew install --cask iterm2
-brew install --cask karabiner-elements
-brew install --cask sequel-ace
+brew tap homebrew/cask-fonts
+brew install --cask 1password
+brew install --cask firefox-nightly
+brew install --cask google-chrome-canary
+brew install --cask monitorcontrol
+brew install --cask vagrant
+brew install --cask altair-graphql-client
+brew install --cask font-cascadia-code
+brew install --cask google-cloud-sdk
 brew install --cask phoenix
+brew install --cask virtualbox
+brew install --cask android-platform-tools
+brew install --cask font-cascadia-code-pl
+brew install --cask insomnia
 brew install --cask rowanj-gitx
 brew install --cask visual-studio-code
+brew install --cask boop
+brew install --cask font-cascadia-mono
+brew install --cask intellij-idea-ce
+brew install --cask safari-technology-preview
+brew install --cask whatsapp
+brew install --cask bruno
+brew install --cask font-cascadia-mono-pl
+brew install --cask iterm2
+brew install --cask sequel-ace
+brew install --cask zoom
+brew install --cask chromedriver
+brew install --cask font-fira-code
+brew install --cask karabiner-elements
+brew install --cask sketch
+brew install --cask cyberduck
+brew install --cask font-monaspace
+brew install --cask keepassxc
 brew install --cask telegram
-brew install --cask 1password
+brew install --cask figma
+brew install --cask font-victor-mono-nerd-font
+brew install --cask maccy
+brew install --cask the-unarchiver
 
 # Remove outdated versions from the cellar.
 brew cleanup

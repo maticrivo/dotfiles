@@ -7,10 +7,11 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME=""
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="zeit/zeit"
 #ZSH_THEME="powerlevel9k/powerlevel9k"
-ZSH_THEME=""
+#ZSH_THEME="spaceship"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -54,7 +55,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(macos git npm virtualenvwrapper)
+plugins=(macos git npm sudo golang vscode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -62,12 +63,14 @@ source $ZSH/oh-my-zsh.sh
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,exports,functions,aliases,extra}; do
+for file in ~/.{exports,path,functions,aliases,extra}; do
         [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
 autoload -U promptinit; promptinit
+# turn on git stash status
+zstyle :prompt:pure:git:stash show yes
 prompt pure
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -125,7 +128,26 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # add-zsh-hook chpwd load-nvmrc
 # load-nvmrc
 
+# scmbreeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+setopt no_complete_aliases
+
+# Google Cloud SDK
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+source $(pack completion --shell zsh)
+
+# Configuration for Python, PIP, OpenSSL to trust the PayPal Proxy Certificates
+export REQUESTS_CA_BUNDLE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
+export SSL_CERT_FILE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
+
+# Console autocomplete
+CONSOLE_AC_ZSH_SETUP_PATH=/Users/mcrivolotti/Library/Caches/@paypalcorp/console-cli-core/autocomplete/zsh_setup && test -f $CONSOLE_AC_ZSH_SETUP_PATH && source $CONSOLE_AC_ZSH_SETUP_PATH;
+
+# Configuration for node to trust the PayPal Proxy Certificates
+export NODE_EXTRA_CA_CERTS='/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem'
+
+source $HOME/.config/rosetta/completion.zsh.inc
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
