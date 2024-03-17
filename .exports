@@ -42,9 +42,6 @@ export GPG_TTY=$(tty);
 # Hide the “default interactive shell is now zsh” warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;
 
-# PayPal Root Certificate for node
-export NODE_EXTRA_CA_CERTS="/private/etc/ssl/certs/paypal_crypto_root.pem"
-
 # PayPal Java SDK Zulu
 export JAVA_HOME=$(/usr/libexec/java_home)
 
