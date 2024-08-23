@@ -42,9 +42,9 @@ brew install wget
 brew install vim
 brew install grep
 brew install openssh
-brew install screen
+# brew install screen
 # brew install php
-brew install gmp
+# brew install gmp
 
 # Install font tools.
 # brew tap bramstein/webfonttools
@@ -84,8 +84,8 @@ brew install gmp
 brew install git
 brew install git-lfs
 brew install git-open
-brew install gs
-brew install imagemagick --with-webp
+# brew install gs
+# brew install imagemagick --with-webp
 # brew install lua
 # brew install lynx
 # brew install p7zip
@@ -99,52 +99,56 @@ brew install node
 brew install interactive-rebase-tool
 brew install diff-so-fancy
 brew install bat
+brew install htop
 brew install prettyping
 brew install zsh-syntax-highlighting
 brew install python
 # brew install vbindiff
 # brew install zopfli
+brew install go
 
 # Brew casks
-brew cask
-brew tap homebrew/cask-fonts
-brew install --cask 1password
-brew install --cask firefox-nightly
-brew install --cask google-chrome-canary
-brew install --cask monitorcontrol
-brew install --cask vagrant
-brew install --cask altair-graphql-client
-brew install --cask font-cascadia-code
-brew install --cask google-cloud-sdk
+# brew cask
+# brew tap homebrew/cask-fonts
+# brew install --cask 1password
+# brew install --cask firefox-nightly
+# brew install --cask google-chrome-canary
+# brew install --cask monitorcontrol
+# brew install --cask vagrant
+# brew install --cask altair-graphql-client
+# brew install --cask font-cascadia-code
+# brew install --cask google-cloud-sdk
 brew install --cask phoenix
-brew install --cask virtualbox
-brew install --cask android-platform-tools
-brew install --cask font-cascadia-code-pl
-brew install --cask insomnia
+# brew install --cask virtualbox
+# brew install --cask android-platform-tools
+# brew install --cask font-cascadia-code-pl
+# brew install --cask insomnia
 brew install --cask rowanj-gitx
 brew install --cask visual-studio-code
 brew install --cask boop
-brew install --cask font-cascadia-mono
-brew install --cask intellij-idea-ce
-brew install --cask safari-technology-preview
+# brew install --cask font-cascadia-mono
+# brew install --cask intellij-idea-ce
+# brew install --cask safari-technology-preview
 brew install --cask whatsapp
 brew install --cask bruno
-brew install --cask font-cascadia-mono-pl
-brew install --cask iterm2
+# brew install --cask font-cascadia-mono-pl
+# brew install --cask iterm2
 brew install --cask sequel-ace
-brew install --cask zoom
-brew install --cask chromedriver
-brew install --cask font-fira-code
+# brew install --cask zoom
+# brew install --cask chromedriver
+# brew install --cask font-fira-code
 brew install --cask karabiner-elements
-brew install --cask sketch
-brew install --cask cyberduck
-brew install --cask font-monaspace
-brew install --cask keepassxc
-brew install --cask telegram
-brew install --cask figma
-brew install --cask font-victor-mono-nerd-font
+# brew install --cask sketch
+# brew install --cask cyberduck
+# brew install --cask font-monaspace
+# brew install --cask keepassxc
+# brew install --cask telegram
+# brew install --cask figma
+# brew install --cask font-victor-mono-nerd-font
 brew install --cask maccy
 brew install --cask the-unarchiver
-
+brew install --cask font-victor-mono-nerd-font
+brew install --cask stow
+brew install --cask wezterm
 # Remove outdated versions from the cellar.
 brew cleanup

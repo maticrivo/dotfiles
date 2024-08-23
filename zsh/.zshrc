@@ -68,6 +68,8 @@ for file in ~/.{exports,path,functions,aliases,extra}; do
 done;
 unset file;
 
+fpath+=($HOME/.zsh/pure)
+
 autoload -U promptinit; promptinit
 # turn on git stash status
 zstyle :prompt:pure:git:stash show yes
@@ -100,7 +102,7 @@ prompt pure
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # load nvm
 export NVM_DIR="$HOME/.nvm"
@@ -131,24 +133,3 @@ load-nvmrc
 # scmbreeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 setopt no_complete_aliases
-
-# jenv
-#export PATH="$HOME/.jenv/bin:$PATH"
-#eval "$(jenv init -)"
-
-# Google Cloud SDK
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-source $(pack completion --shell zsh)
-
-# Configuration for Python, PIP, OpenSSL to trust the PayPal Proxy Certificates
-export REQUESTS_CA_BUNDLE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
-export SSL_CERT_FILE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
-
-# Console autocomplete
-CONSOLE_AC_ZSH_SETUP_PATH=/Users/mcrivolotti/Library/Caches/@paypalcorp/console-cli-core/autocomplete/zsh_setup && test -f $CONSOLE_AC_ZSH_SETUP_PATH && source $CONSOLE_AC_ZSH_SETUP_PATH;
-
-# Configuration for node to trust the PayPal Proxy Certificates
-export NODE_EXTRA_CA_CERTS='/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem'
-
-source $HOME/.config/rosetta/completion.zsh.inc

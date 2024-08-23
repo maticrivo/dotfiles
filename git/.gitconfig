@@ -196,28 +196,16 @@
 [init]
 
 	templateDir = ~/.config/git/template/
-	defaultBranch = master
+	defaultBranch = main
 
 [user]
 
 	name = Matias Crivolotti
-	email = matioav@gmail.com
+	email = matias@cpg.family
 
 [fetch]
 
 	prune = true
-
-[includeIf "gitdir:/Users/mcrivolotti/dev/paypal/"]
-
-	path = /Users/mcrivolotti/dev/paypal/.gitconfig
-
-[includeIf "gitdir:/Users/mcrivolotti/dev/paypal/**"]
-
-	path = /Users/mcrivolotti/dev/paypal/.gitconfig
-
-[includeIf "gitdir:/Users/mcrivolotti/dev/paypal/**/**"]
-
-	path = /Users/mcrivolotti/dev/paypal/.gitconfig
 
 [sequence]
 
@@ -226,15 +214,6 @@
 [pull]
 
 	rebase = true
-
-[url "ssh://git@github.paypal.com/"]
-	insteadOf = https://github.paypal.com/
-
-[url "https://github.com"]
-	insteadof = ssh://git@github.com
-
-[url "https://github.com/"]
-	insteadof = git@github.com:
 
 [url "https://"]
 	insteadOf = git://

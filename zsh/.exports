@@ -42,24 +42,8 @@ export GPG_TTY=$(tty);
 # Hide the “default interactive shell is now zsh” warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;
 
-# PayPal Java SDK Zulu
-export JAVA_HOME=$(/usr/libexec/java_home)
-
 # Go exports
 export GOPATH="$HOME/go"
 export GO111MODULE=on
 export CGO_ENABLED=1
-export GOPRIVATE=github.paypal.com
 export GODEBUG=x509sha1=1
-# export GOPROXY=https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/go
-
-# Kubectl config
-export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-
-export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-
-# nvm exports
-export NVM_NODEJS_ORG_MIRROR=https://artifactory.paypalcorp.com/artifactory/nodejs-dist
-export NODEJS_ORG_MIRROR=https://artifactory.paypalcorp.com/artifactory/nodejs-dist
