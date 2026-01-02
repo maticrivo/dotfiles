@@ -137,18 +137,17 @@ brew install --cask sequel-ace
 # brew install --cask zoom
 # brew install --cask chromedriver
 # brew install --cask font-fira-code
-brew install --cask karabiner-elements
+# brew install --cask karabiner-elements
 # brew install --cask sketch
 # brew install --cask cyberduck
 # brew install --cask font-monaspace
 # brew install --cask keepassxc
-# brew install --cask telegram
+brew install --cask telegram
 # brew install --cask figma
-# brew install --cask font-victor-mono-nerd-font
+brew install --cask font-victor-mono-nerd-font
 brew install --cask maccy
 brew install --cask the-unarchiver
-brew install --cask font-victor-mono-nerd-font
 brew install --cask stow
-brew install --cask wezterm
+
 # Remove outdated versions from the cellar.
 brew cleanup
