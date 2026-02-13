@@ -15,11 +15,11 @@ alias dt="cd ~/Desktop"
 alias g="git"
 alias gx="gitx"
 
-alias cat="bat"
-alias top="sudo htop"
+# alias cat="bat"
+# alias top="sudo htop"
 # alias help='tldr'
-alias ping='prettyping --nolegend'
-alias preview="fzf --preview 'bat --color \"always\" {}'"
+# alias ping='prettyping --nolegend'
+# alias preview="fzf --preview 'bat --color \"always\" {}'"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -49,13 +49,13 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Enable aliases to be sudo’ed
-alias sudo='sudo '
+# alias sudo='sudo '
 
 # Get week number
 alias week='date +%V'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm --location=global; npm update --location=global; update_scm_breeze'
+alias update='brew update; brew upgrade; brew cleanup; npm install npm --location=global; npm update --location=global; update_scm_breeze'
 
 # Google Chrome
 # alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
