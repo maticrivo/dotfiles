@@ -1,0 +1,44 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "external_directory": {
+      "~/.config/opencode/get-shit-done/*": "allow"
+    },
+    "read": {
+      "~/.config/opencode/get-shit-done/*": "allow"
+    }
+  },
+  "provider": {
+    "ollama": {
+      "models": {
+        "qwen3-coder-next": {
+          "_launch": true,
+          "name": "qwen3-coder-next"
+        },
+        "qwen3-coder-next:cloud": {
+          "_launch": true,
+          "limit": {
+            "context": 262144,
+            "output": 32768
+          },
+          "name": "qwen3-coder-next:cloud"
+        }
+      },
+      "name": "Ollama (local)",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:11434/v1"
+      }
+    }
+  },
+  "plugin": [
+    "opencode-mystatus",
+    "oh-my-opencode"
+  ],
+  "command": {
+    "mystatus": {
+      "description": "Query quota usage for all AI accounts",
+      "template": "Use the mystatus tool to query quota usage. Return the result as-is without modification."
+    }
+  }
+}
