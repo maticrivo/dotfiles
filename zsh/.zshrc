@@ -133,3 +133,6 @@ load-nvmrc
 # scmbreeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 setopt no_complete_aliases
+
+# bun completions
+[ -s "/Users/mati/.bun/_bun" ] && source "/Users/mati/.bun/_bun"
