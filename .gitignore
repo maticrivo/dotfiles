@@ -1,0 +1,4 @@
+# ignore superpowers config files
+opencode/.config/opencode/superpowers/
+opencode/.config/opencode/plugins/superpowers.js
+opencode/.config/opencode/skills/superpowers
