@@ -9,8 +9,9 @@
       "template": "Use the mystatus tool to query quota usage. Return the result as-is without modification."
     }
   },
-  "model": "zai-coding-plan/glm-4.7",
-  "small_model": "zai-coding-plan/glm-4.5-air",
+  "model": "zai-coding-plan/glm-5",
+  "small_model": "zai-coding-plan/glm-4.7-flash",
+  "autoupdate": false,
   "provider": {
     "zai-coding-plan": {
       "options": {
