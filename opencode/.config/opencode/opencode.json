@@ -1,7 +1,8 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
-    "opencode-mystatus"
+    "opencode-mystatus",
+    "superpowers@git+https://github.com/obra/superpowers.git"
   ],
   "command": {
     "mystatus": {
