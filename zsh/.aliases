@@ -155,3 +155,7 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Spoof WiFi MAC Address for freewifi
 alias freewifi="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`"
+
+# Opencode alias
+alias oc="command opencode"
+alias ocs="command opencode serve --hostname 0.0.0.0"
