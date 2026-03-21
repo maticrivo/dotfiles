@@ -19,5 +19,16 @@
         "apiKey": "2dcce055577f4ea5a56c198e63c756ed.z8E6JgFXz084Rxn6"
       }
     }
+  },
+  "mcp": {
+    "pencil": {
+      "command": [
+        "/Applications/Pencil.app/Contents/Resources/app.asar.unpacked/out/mcp-server-darwin-arm64",
+        "--app",
+        "desktop"
+      ],
+      "enabled": true,
+      "type": "local"
+    }
   }
 }
