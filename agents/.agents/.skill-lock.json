@@ -1,0 +1,67 @@
+{
+  "version": 3,
+  "skills": {
+    "pdf": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/pdf/SKILL.md",
+      "skillFolderHash": "6369f4649de69bd6857c9bc3b058a77206009238",
+      "installedAt": "2026-02-23T12:05:09.017Z",
+      "updatedAt": "2026-02-23T12:05:09.017Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "installedAt": "2026-02-23T12:05:24.857Z",
+      "updatedAt": "2026-03-22T12:18:15.063Z"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "skillFolderHash": "69bf4a7eeeaa772290c1c5efd19da0865f903af8",
+      "installedAt": "2026-02-25T12:51:29.416Z",
+      "updatedAt": "2026-03-22T12:18:17.220Z"
+    },
+    "apple-notes": {
+      "source": "steipete/clawdis",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/steipete/clawdis.git",
+      "skillPath": "skills/apple-notes/SKILL.md",
+      "skillFolderHash": "9690bd37e606640796aa7c44b9344b13c341afd4",
+      "installedAt": "2026-03-24T16:08:55.945Z",
+      "updatedAt": "2026-03-24T16:08:55.945Z"
+    },
+    "apple-reminders": {
+      "source": "steipete/clawdis",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/steipete/clawdis.git",
+      "skillPath": "skills/apple-reminders/SKILL.md",
+      "skillFolderHash": "7b8375c76c0e3773f232807308b59d4e541669cd",
+      "installedAt": "2026-03-24T16:08:57.104Z",
+      "updatedAt": "2026-03-24T16:08:57.104Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode",
+    "warp",
+    "pi"
+  ]
+}
