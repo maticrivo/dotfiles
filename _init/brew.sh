@@ -41,7 +41,7 @@ brew install wget
 # Install more recent versions of some macOS tools.
 brew install vim
 brew install grep
-brew install openssh
+# brew install openssh
 brew install tmux
 # brew install screen
 # brew install php
@@ -81,7 +81,7 @@ brew install tmux
 
 # Install other useful binaries.
 # brew install ack
-#brew install exiv2
+# brew install exiv2
 brew install git
 brew install git-lfs
 brew install git-open
@@ -99,14 +99,15 @@ brew install tree
 brew install node
 brew install interactive-rebase-tool
 brew install diff-so-fancy
-brew install bat
-brew install htop
-brew install prettyping
+# brew install bat
+# brew install htop
+# brew install prettyping
 brew install zsh-syntax-highlighting
-brew install python
+# brew install python
 # brew install vbindiff
 # brew install zopfli
 brew install go
+brew install stow
 
 # Brew casks
 # brew cask
@@ -124,17 +125,17 @@ brew install --cask phoenix
 # brew install --cask android-platform-tools
 # brew install --cask font-cascadia-code-pl
 # brew install --cask insomnia
-brew install --cask rowanj-gitx
-brew install --cask visual-studio-code
-brew install --cask boop
+# brew install --cask rowanj-gitx
+# brew install --cask visual-studio-code
+# brew install --cask boop
 # brew install --cask font-cascadia-mono
 # brew install --cask intellij-idea-ce
 # brew install --cask safari-technology-preview
-brew install --cask whatsapp
-brew install --cask bruno
+# brew install --cask whatsapp
+# brew install --cask bruno
 # brew install --cask font-cascadia-mono-pl
 # brew install --cask iterm2
-brew install --cask sequel-ace
+# brew install --cask sequel-ace
 # brew install --cask zoom
 # brew install --cask chromedriver
 # brew install --cask font-fira-code
@@ -143,12 +144,11 @@ brew install --cask sequel-ace
 # brew install --cask cyberduck
 # brew install --cask font-monaspace
 # brew install --cask keepassxc
-brew install --cask telegram
+# brew install --cask telegram
 # brew install --cask figma
-brew install --cask font-victor-mono-nerd-font
+# brew install --cask font-victor-mono-nerd-font
 brew install --cask maccy
-brew install --cask the-unarchiver
-brew install --cask stow
+# brew install --cask the-unarchiver
 
 # Remove outdated versions from the cellar.
 brew cleanup
