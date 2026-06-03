@@ -223,3 +223,21 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[includeIf "gitdir:/Users/matias.crivolotti/dev/cyberark/"]
+	path = /Users/matias.crivolotti/dev/cyberark/.gitconfig
+
+[includeIf "gitdir:/Users/matias.crivolotti/dev/cyberark/**"]
+	path = /Users/matias.crivolotti/dev/cyberark/.gitconfig
+
+[includeIf "gitdir:/Users/matias.crivolotti/dev/cyberark/**/**"]
+	path = /Users/matias.crivolotti/dev/cyberark/.gitconfig
+
+[includeIf "gitdir:/Users/matias.crivolotti/dev/paloalto/"]
+	path = /Users/matias.crivolotti/dev/paloalto/.gitconfig
+
+[includeIf "gitdir:/Users/matias.crivolotti/dev/paloalto/**"]
+	path = /Users/matias.crivolotti/dev/paloalto/.gitconfig
+
+[includeIf "gitdir:/Users/matias.crivolotti/dev/paloalto/**/**"]
+	path = /Users/matias.crivolotti/dev/paloalto/.gitconfig
